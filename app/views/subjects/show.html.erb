@@ -1,0 +1,14 @@
+<h2><%= @subject.title %></h2>
+<h3><%= @subject.teacher %></h3>
+<!--<h4>Category: <%= @subject.category.name%></h4>-->
+<p><%= @subject.description %></p>
+<%= link_to 'Back', root_path %>
+
+<% if user_signed_in? %>
+  <% if @subject.user_id == current_user.id %>
+
+    <%= link_to 'Edit', edit_subject_path(@subject) %>
+    <%= link_to 'Delete', subject_path(@subject), method: :delete, data: {confirm: 'Are you sure?'} %>
+
+  <% end %>
+<% end %>

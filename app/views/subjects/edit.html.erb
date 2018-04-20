@@ -1,0 +1,8 @@
+<h1>Edit Subject</h1>
+
+<%= simple_form_for @subject, :html => { :multipart => true } do |f| %>
+  <%= f.input :title, label: 'Subject title'%>
+  <%= f.input :description%>
+  <%= f.input :teacher%>
+  <%= f.button :submit%>
+<% end %>

@@ -1,0 +1,9 @@
+<h1 class="current-category"><%= params[:category] %></h1>
+
+<% if @subjects.count == 0 %>
+  <h1>Empty! Feel free!</h1>
+<% else %>
+  <%= @subjects.each do |subject| %>
+    <h2><%= link_to subject.title, subject_path(subject) %></h2>
+  <% end %>
+<% end %>
