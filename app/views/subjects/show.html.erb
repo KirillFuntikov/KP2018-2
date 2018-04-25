@@ -1,14 +1,78 @@
-<h2><%= @subject.title %></h2>
-<h3><%= @subject.teacher %></h3>
-<!--<h4>Category: <%= @subject.category.name%></h4>-->
-<p><%= @subject.description %></p>
-<%= link_to 'Back', root_path %>
+<div class="row">
 
-<% if user_signed_in? %>
-  <% if @subject.user_id == current_user.id %>
+  <div class="col-md-4">
 
-    <%= link_to 'Edit', edit_subject_path(@subject) %>
-    <%= link_to 'Delete', subject_path(@subject), method: :delete, data: {confirm: 'Are you sure?'} %>
+    <%= image_tag @subject.subject_img.url(:subject_show), class: "subject-show" %>
 
+  </div>
+
+  <div class="col-md-8">
+
+    <div class="subject-info">
+
+      <h1 class="subject-title"><%= @subject.title %></h1>
+      <h3 class="subject-teacher"><%= @subject.teacher %></h3>
+      <h3 class="avg-complexity">Средняя сложность:</h3>
+      <div class="average-lab-complexity" data-score=<%= @average_lab %>></div>
+      <span class="number-of-labs">Расчитано по <%= @subject.labs.count %> лабораторным работам </span>
+      <p class="subject-description"><%= @subject.description %></p>
+
+    </div>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-md-4">
+
+    <div class="labs">
+
+      <h1>Лабораторные работы</h1>
+
+      <%= render @subject.labs %>
+
+      <div>
+        <%= link_to "Add lab", new_subject_lab_path(@subject), class: "btn-custom" %>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<div class="links btn-group">
+
+  <%= link_to 'Back', root_path, class: "btn btn-custom" %>
+
+  <% if user_signed_in? %>
+    <% if @subject.user_id == current_user.id %>
+
+      <%= link_to 'Edit', edit_subject_path(@subject), class: "btn btn-custom" %>
+      <%= link_to 'Delete', subject_path(@subject), method: :delete, data: {confirm: 'Are
+      you sure?'}, class: "btn btn-custom" %>
+
+    <% end %>
   <% end %>
-<% end %>
+</div>
+
+
+<script>
+    $('.lab-rating').raty({
+        readOnly: true,
+        score: function () {
+            return $(this).attr('data-score');
+        },
+        path: '/assets/'
+    });
+</script>
+
+<script>
+    $('.average-lab-complexity').raty({
+        readOnly: true,
+        path: '/assets/',
+        score: function () {
+            return $(this).attr('data-score')
+        }
+    });
+</script>

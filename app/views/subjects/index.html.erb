@@ -1,9 +1,25 @@
 <h1 class="current-category"><%= params[:category] %></h1>
 
 <% if @subjects.count == 0 %>
+
   <h1>Empty! Feel free!</h1>
+
 <% else %>
-  <%= @subjects.each do |subject| %>
-    <h2><%= link_to subject.title, subject_path(subject) %></h2>
-  <% end %>
+
+  <div class="row">
+
+    <%= @subjects.find_each do |subject| %>
+
+      <div class="col-md-3">
+
+        <a href="/subjects/<%= subject.id %>">
+          <%= image_tag subject.subject_img.url(:subject_index), class: "subject"%>
+          <h3><%= link_to subject.title, subject_path(subject.id) %></h3>
+        </a>
+      </div>
+
+    <% end %>
+  </div>
+
 <% end %>
+

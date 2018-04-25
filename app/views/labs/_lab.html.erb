@@ -1,0 +1,14 @@
+<div class="lab">
+
+  <div class="lab-rating" data-score="<%= lab.complexity %>"></div>
+  <p class="lab-comment"><%= lab.comment %></p>
+
+  <div class="links btn-group">
+
+    <%= link_to "Edit", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
+    <%= link_to "Delete", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Are
+     you sure?'}, class: "btn btn-custom" %>
+
+  </div>
+
+</div>

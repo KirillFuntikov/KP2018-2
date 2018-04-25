@@ -15,6 +15,7 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'sass-rails', '>= 3.2'
 gem 'jquery-rails'
 gem 'devise', '~> 4.4', '>= 4.4.3'
+gem 'paperclip', '~> 6.0'
 #
 
 gem 'puma', '~> 3.7'
