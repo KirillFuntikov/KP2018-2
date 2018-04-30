@@ -13,7 +13,7 @@
       <div class="col-md-3">
 
         <a href="/subjects/<%= subject.id %>">
-          <%= image_tag subject.subject_img.url(:subject_index), class: "subject"%>
+          <%= image_tag subject.subject_img.url(:subject_index), class: "subject" %>
           <h3><%= link_to subject.title, subject_path(subject.id) %></h3>
         </a>
       </div>

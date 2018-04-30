@@ -15,6 +15,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.subject:hover {
+  box-shadow: 5px 5px 7px 8px #ccc;
+}
+
 .subject {
   height: 250px;
   width: 250px;
@@ -235,6 +239,14 @@ p.alert, p.notice {
 
 }
 
+.fire-labs {
+  border: solid 5px #FF8C00;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 450px;
+}
+
 /* New subject Form styles */
 
 .new-subject-form {
@@ -312,4 +324,14 @@ p.alert, p.notice {
     margin-top: 0;
   }
 
+}
+
+.stat-img {
+  width:350px;
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+
+.user-pic{
+  height: 65%;
 }

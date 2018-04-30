@@ -3,6 +3,9 @@
     <label>Сложность</label>
   </div>
   <%= f.input :comment %>
+  <span>Дата сдачи:</span>
+  <!--<%= f.date_select :deadline %>-->
+  <%= select_date Date.today, prefix: :deadline %>
   <%= f.button :submit, :class => "btn-custom2" %>
 <% end %>
 

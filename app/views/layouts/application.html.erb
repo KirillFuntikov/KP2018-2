@@ -41,6 +41,7 @@
       </li>
 
       <% if user_signed_in? %>
+        <li><%= link_to 'Статистика', statistics_generate_scv_user_path%></li>
         <li><%= link_to 'Add Subject', new_subject_path %></li>
       <% end %>
     </ul>
