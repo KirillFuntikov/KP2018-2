@@ -17,6 +17,7 @@ gem 'jquery-rails'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'paperclip', '~> 6.0'
 gem 'pry'
+gem 'letter_opener', '~> 1.6'
 #
 
 gem 'puma', '~> 3.7'
