@@ -1,13 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c14a588-e7c6-4d05-bf0b-ac533e42a2d8" name="Default" comment="">
+    <list default="true" id="0c14a588-e7c6-4d05-bf0b-ac533e42a2d8" name="Default" comment="Unversioned files">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/eea16ed8-3668-4ed7-acaf-858586c3c7f2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/eea16ed8-3668-4ed7-acaf-858586c3c7f2/storage_v2/_src_/schema/main.uQUzAA.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/labs.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/star-half.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/star-off.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/star-on.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/subjects.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/users.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/jquery.raty.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/labs.coffee" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/statistics.coffee" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/subjects.coffee" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/labs.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/statistics.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/subjects.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/labs_controller.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/statistics_controller.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/helpers/labs_helper.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/helpers/statistics_helper.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/helpers/subjects_helper.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/category.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/lab.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/subject.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/email_changed.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/password_change.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/views/statistics/generate_scv_user.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/initializers/simple_form.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/config/locales/simple_form.en.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180420003453_create_subjects.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180420023306_devise_create_users.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180420030021_add_user_id_to_subjects.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180420031655_create_categories.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180420031845_add_category_id_to_subjects.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180423213145_add_attachment_subject_img_to_subjects.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180423233737_create_labs.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180423233946_add_user_id_to_labs.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180424001508_add_subject_id_to_labs.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180424002016_remove_lab_id_from_labs.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180428215237_add_deadline_to_labs.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180504165757_add_processing_at_to_labs.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180504165829_add_done_at_to_labs.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180504180808_add_status_to_labs.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180504192053_deleting_for_update_time.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180504192457_adding_processing_at_to_labs.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20180504193211_adding_done_at_to_labs.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/controllers/labs_controller_test.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/controllers/statistics_controller_test.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/controllers/subjects_controller_test.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/categories.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/labs.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/subjects.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/models/category_test.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/models/lab_test.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/models/subject_test.rb" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/test/models/user_test.rb" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.scss" />
-      <change beforePath="$PROJECT_DIR$/app/views/labs/_lab.html.erb" afterPath="$PROJECT_DIR$/app/views/labs/_lab.html.erb" />
-      <change beforePath="$PROJECT_DIR$/app/views/subjects/show.html.erb" afterPath="$PROJECT_DIR$/app/views/subjects/show.html.erb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -105,8 +174,8 @@
       <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/subjects/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+            <state relative-caret-position="418">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -488,7 +557,7 @@
       <workItem from="1524187825128" duration="16727000" />
       <workItem from="1524518292449" duration="20467000" />
       <workItem from="1524678272478" duration="37326000" />
-      <workItem from="1525384034268" duration="27384000" />
+      <workItem from="1525384034268" duration="27617000" />
     </task>
     <task id="LOCAL-00001" summary="Base functions">
       <created>1524199146176</created>
@@ -518,17 +587,33 @@
       <option name="project" value="LOCAL" />
       <updated>1525266785264</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="CAN-BAN desk">
+      <created>1525557326341</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1525557326341</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105520000" />
+    <option name="totallyTimeSpent" value="105753000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="209" y="0" width="1920" height="1044" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2628205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.50427353" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -580,7 +665,9 @@
     <MESSAGE value="Labs, complexity, styles" />
     <MESSAGE value="Additional functional (fire labs, stat), some refactor" />
     <MESSAGE value="Password recover fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Password recover fix" />
+    <MESSAGE value="CAN-BAN desk" />
+    <MESSAGE value="Unversioned files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unversioned files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -611,6 +698,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,6 +731,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -664,6 +755,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -980,8 +1072,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/subjects/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+        <state relative-caret-position="418">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding />
         </state>
       </provider>

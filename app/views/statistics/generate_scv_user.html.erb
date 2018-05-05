@@ -1,0 +1,17 @@
+<table style="width: 100%">
+  <th>
+    <%= image_tag("users.png", :alt => "users", :class => 'user-pic stat-img') %>
+    <%= link_to "Скачать статистику о пользователях", statistics_generate_scv_user_path(format: :csv),
+                :class => 'btn-custom2' %>
+  </th>
+  <th>
+    <%= image_tag("labs.png", :alt => "labs", :class => 'stat-img') %>
+    <%= link_to "Скачать статистику о лабораторных работах", statistics_generate_csv_lab_path(format: :csv),
+                :class => 'btn-custom2' %>
+  </th>
+  <th>
+    <%= image_tag("subjects.png", :alt => "users", :class => 'stat-img') %>
+    <%= link_to "Скачать статистику о предметах", statistics_generate_csv_subject_path(format: :csv),
+                :class => 'btn-custom2' %>
+  </th>
+</table>
