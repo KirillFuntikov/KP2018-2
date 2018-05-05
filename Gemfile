@@ -10,6 +10,7 @@ gem 'rails', '~> 5.1.6'
 gem 'sqlite3'
 
 # Mine gems
+gem 'stateful_enum'
 gem 'simple_form', '~> 4.0'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'sass-rails', '>= 3.2'

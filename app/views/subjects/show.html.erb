@@ -27,18 +27,34 @@
 
     <div class="labs">
 
-      <h1>Лабораторные работы</h1>
+      <h1>Предстоящие</h1>
 
-      <%= render @subject.labs %>
+      <%= render @subject.labs.todo %>
 
       <div>
         <%= link_to "Add lab", new_subject_lab_path(@subject), class: "btn-custom" %>
       </div>
     </div>
 
+    <div class="proc-labs labs">
+
+      <h1>Выполняются</h1>
+
+      <%= render @subject.labs.processing %>
+
+    </div>
+
+    <div class="done-labs labs">
+
+      <h1>Готовые</h1>
+
+      <%= render @subject.labs.done %>
+
+    </div>
+
     <div class="fire-labs labs">
 
-      <h1>Срочные лабораторные работы</h1>
+      <h1>Срочные</h1>
 
       <%= render @fire_labs %>
 

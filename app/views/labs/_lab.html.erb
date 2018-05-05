@@ -1,15 +1,51 @@
 <div class="lab">
 
   <div class="lab-rating" data-score="<%= lab.complexity %>"></div>
-  <p class="lab-comment"><%= lab.comment %></p>
+  <h4 class="lab-comment"><%= lab.comment %></h4>
   <p class="lab-comment"><%= lab.deadline %></p>
 
-  <div class="links btn-group">
+  <% if lab.status == 'todo' %>
 
-    <%= link_to "Edit", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
-    <%= link_to "Delete", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Are
+    <p><%= time_ago_in_words(lab.created_at) %> ago </p>
+    <div class="links btn-group">
+      <%= link_to "Edit", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
+      <%= link_to "Delete", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Are
+     you sure?'}, class: "btn btn-custom" %>
+      <div>
+        <%= form_for lab, url: subject_lab_path(subject_id: lab.subject.id, id: lab.id), method: :put do |l| %>
+          <%= l.hidden_field :state_event, value: :process %>
+          <%= l.submit "Next", method: :process, class: "btn btn-custom" %>
+        <% end %>
+      </div>
+
+    </div>
+
+  <% elsif lab.status == 'processing' %>
+
+    <p><%= time_ago_in_words(lab.processing_at) %> ago </p>
+    <div class="links btn-group">
+      <%= link_to "Edit", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
+      <%= link_to "Delete", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Are
+     you sure?'}, class: "btn btn-custom" %>
+      <div class="action_bar">
+        <%= form_for lab, url: subject_lab_path(subject_id: lab.subject.id, id: lab.id), method: :put do |l| %>
+          <%= l.hidden_field :state_event, value: :complete %>
+          <%= l.submit "Next", method: :complete, class: "btn-custom2" %>
+        <% end %>
+      </div>
+
+    </div>
+
+  <% elsif lab.status == 'done' %>
+
+    <p><%= time_ago_in_words(lab.done_at) %> ago </p>
+    <div class="links btn-group">
+      <%= link_to "Edit", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
+      <%= link_to "Delete", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Are
      you sure?'}, class: "btn btn-custom" %>
 
-  </div>
+    </div>
+
+  <% end %>
 
 </div>

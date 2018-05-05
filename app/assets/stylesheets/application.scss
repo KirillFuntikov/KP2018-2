@@ -212,6 +212,7 @@ p.alert, p.notice {
 
 .labs {
 
+  width: 75%;
   @include background-tile;
   margin-top: 40px;
 
@@ -242,9 +243,21 @@ p.alert, p.notice {
 .fire-labs {
   border: solid 5px #FF8C00;
   position: absolute;
-  width: 100%;
+  width: 90%;
   top: 0px;
-  left: 450px;
+  left: 917px;
+}
+
+.proc-labs{
+  position: absolute;
+  top: 0px;
+  left: 300px;
+}
+
+.done-labs{
+  position: absolute;
+  top: 0px;
+  left: 608px;
 }
 
 /* New subject Form styles */
