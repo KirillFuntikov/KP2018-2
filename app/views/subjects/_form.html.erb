@@ -1,8 +1,8 @@
 <%= simple_form_for @subject, :html => { :multipart => true } do |f| %>
-  <%= select_tag(:category_id, options_for_select(@categories),:selected => 1, :prompt => 'Select a category')%>
+  <%= select_tag(:category_id, options_for_select(@categories),:selected => 1, :prompt => 'Выберите категорию')%>
   <%= f.file_field :subject_img%>
-  <%= f.input :title, label: 'Subject title'%>
-  <%= f.input :description%>
-  <%= f.input :teacher%>
+  <%= f.input :title, label: 'Название предмета'%>
+  <%= f.input :description, label: 'Описание'%>
+  <%= f.input :teacher, label: 'Преподаватель'%>
   <%= f.button :submit, class: "btn-custom2"%>
 <% end %>

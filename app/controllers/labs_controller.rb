@@ -8,6 +8,9 @@ class LabsController < ApplicationController
   end
 
   def create
+    if params[:lab][:complexity] == ""
+      params[:lab][:complexity] = 1
+    end
     @lab = Lab.new(lab_params)
     @lab.subject_id = @subject.id
     @lab.user_id = current_user.id

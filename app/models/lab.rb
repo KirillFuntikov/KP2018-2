@@ -31,7 +31,7 @@ class Lab < ApplicationRecord
   end
 
   def self.to_csv
-    attributes = %w[id comment complexity deadline]
+    attributes = %w[id user_id comment complexity deadline status]
 
     CSV.generate(headers: true) do |csv|
       csv << attributes
