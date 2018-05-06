@@ -3,7 +3,8 @@ class Subject < ApplicationRecord
   belongs_to :category
   has_many :labs
 
-    has_attached_file :subject_img, styles: { subject_index: "250x350", subject_show: "350x450>" }, default_url: "/images/:style/missing.png"
+    has_attached_file :subject_img, styles: { subject_index: "250x350", subject_show: "350x450>" },
+                      default_url: "http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Status-image-missing-icon.png"
     validates_attachment_content_type :subject_img, content_type: /\Aimage\/.*\z/
 
   def self.to_csv

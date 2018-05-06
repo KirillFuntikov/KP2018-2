@@ -1,5 +1,5 @@
 <%= simple_form_for @subject, :html => { :multipart => true } do |f| %>
-  <%= select_tag(:category_id, options_for_select(@categories), :prompt => 'Select a category')%>
+  <%= select_tag(:category_id, options_for_select(@categories),:selected => 1, :prompt => 'Select a category')%>
   <%= f.file_field :subject_img%>
   <%= f.input :title, label: 'Subject title'%>
   <%= f.input :description%>

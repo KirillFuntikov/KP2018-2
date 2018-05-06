@@ -348,3 +348,29 @@ p.alert, p.notice {
 .user-pic{
   height: 65%;
 }
+
+.next-btn {
+  color: darken(#007e1b, 5%);
+  background-color: #fafbff;
+  border: 1px solid darken(#01f100, 5%);
+  padding-right: 8px;
+  &:hover {
+    text-decoration: none;
+    background-color: darken(#007e1b, 5%);
+    color: #fff;
+    transition: 0.5s;
+  }
+}
+
+.baner {
+  position: absolute;
+  top: 550px;
+  left: 860px;
+}
+
+.add-lab {
+  text-size: 50px;
+  position: absolute;
+  top: 550px;
+  left: 650px;
+}

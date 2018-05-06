@@ -28,7 +28,11 @@ class SubjectsController < ApplicationController
 
   def create
     @subject = current_user.subjects.build(subject_params)
-    @subject.category_id = params[:category_id]
+    if params[:category_id] == ""
+      @subject.category_id = '1'
+    else
+      @subject.category_id = params[:category_id]
+    end
 
     if @subject.save
       redirect_to root_path

@@ -2,21 +2,21 @@
 
   <div class="lab-rating" data-score="<%= lab.complexity %>"></div>
   <h4 class="lab-comment"><%= lab.comment %></h4>
-  <p class="lab-comment"><%= lab.deadline %></p>
+  <p class="lab-comment">Дата сдачи: <%= lab.deadline %></p>
 
   <% if lab.status == 'todo' %>
 
     <p><%= time_ago_in_words(lab.created_at) %> ago </p>
+
     <div class="links btn-group">
-      <%= link_to "Edit", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
-      <%= link_to "Delete", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Are
-     you sure?'}, class: "btn btn-custom" %>
-      <div>
+
+      <%= link_to "Изменить", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
+      <%= link_to "Удалить", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Вы уверены?'},
+                  class: "btn btn-custom" %>
         <%= form_for lab, url: subject_lab_path(subject_id: lab.subject.id, id: lab.id), method: :put do |l| %>
           <%= l.hidden_field :state_event, value: :process %>
-          <%= l.submit "Next", method: :process, class: "btn btn-custom" %>
+          <%= l.submit "Далее", method: :process, class: "next-btn btn btn-custom" %>
         <% end %>
-      </div>
 
     </div>
 
@@ -24,13 +24,13 @@
 
     <p><%= time_ago_in_words(lab.processing_at) %> ago </p>
     <div class="links btn-group">
-      <%= link_to "Edit", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
-      <%= link_to "Delete", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Are
+      <%= link_to "Изменить", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
+      <%= link_to "Удалить", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Are
      you sure?'}, class: "btn btn-custom" %>
-      <div class="action_bar">
+      <div>
         <%= form_for lab, url: subject_lab_path(subject_id: lab.subject.id, id: lab.id), method: :put do |l| %>
           <%= l.hidden_field :state_event, value: :complete %>
-          <%= l.submit "Next", method: :complete, class: "btn-custom2" %>
+          <%= l.submit "Далее", method: :complete, class: "next-btn btn btn-custom" %>
         <% end %>
       </div>
 
@@ -40,8 +40,8 @@
 
     <p><%= time_ago_in_words(lab.done_at) %> ago </p>
     <div class="links btn-group">
-      <%= link_to "Edit", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
-      <%= link_to "Delete", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Are
+      <%= link_to "Изменить", edit_subject_lab_path(lab.subject, lab), class: "btn btn-custom" %>
+      <%= link_to "Удалить", subject_lab_path(lab.subject, lab), method: :delete, data: {confirm: 'Are
      you sure?'}, class: "btn btn-custom" %>
 
     </div>

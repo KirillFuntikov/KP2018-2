@@ -2,7 +2,7 @@ class Lab < ApplicationRecord
   belongs_to :subject
   belongs_to :user
 
-  scope :fire_lab_scope, -> {where('deadline <= ?', Time.now + 2.days)}
+  scope :fire_lab_scope, -> { where('deadline <= ?', Time.now + 2.days)}
 
   enum status: { todo: 0, processing: 1, done: 2 } do
     event :process do
