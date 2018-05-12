@@ -7,7 +7,13 @@ end
 
 
 gem 'rails', '~> 5.1.6'
-gem 'sqlite3'
+group :production do
+  gem 'pg'
+end
+
+group :development do
+  gem 'sqlite3'
+end
 
 # Mine gems
 gem 'stateful_enum'
